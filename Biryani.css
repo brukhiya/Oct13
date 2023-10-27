@@ -1,0 +1,267 @@
+*{box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+      padding: 20px; 
+        }
+
+ nav{
+    height: 80px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0px calc((100vw - 1300px)/2);
+} 
+
+
+@font-face {
+    font-family: 'DS';
+    src: url('Dancing_Script/DancingScript-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.logo {
+    color:rgb(205, 53, 53);
+    font-size: 50px;
+    font-family: fantasy;
+    font-weight: bold;
+    font-family: 'DS';
+    font-style: italic;
+    font-weight: bolder;
+    padding: 0 2rem;
+}
+
+nav a{
+    text-decoration: 0;
+    color: black;
+    padding: 0 1rem;
+    font-weight:bold
+}
+
+
+/* Introduction */
+
+.intro-container 
+{
+    display: flex;
+    background-image: url("https://cdn.create.vista.com/api/media/small/473966194/stock-photo-chicken-biryani-kerala-style-chicken-dhum-biriyani-made-using-jeera");
+    background-size: cover;
+    background-position: center;
+    color: #010101; 
+    /* backdrop-filter: blur(0px); */
+    padding: 20px;
+    text-align: justify;
+
+}
+
+.intro-container p {
+    margin-top: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.left-column {
+     flex: 30; 
+     padding: 20px;
+     text-align: left;
+     
+}
+
+.left-column p{
+    margin-bottom: 20px
+}
+
+
+.right-column {
+     flex: 70; 
+}
+
+/* Types of Biryani */
+
+#types {
+    margin-left: 30px;
+    margin-top: 30px; 
+}
+
+#types h2{
+    margin-left: 25px;
+}
+
+#types p{
+    margin-left: 25px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.biryani-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px;
+}
+
+.biryani {
+    text-align: center;
+    box-sizing: border-box; 
+}
+
+.biryani img {
+    border: 2px solid #121212; 
+    border-radius: 10px; 
+    max-width: 350px;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-height: 250px; 
+}
+
+@media screen and (max-width: 768px) {
+    .biryani {
+        grid-column: span 3; 
+    }
+}
+
+/* Origin container */
+
+.origin-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-column-gap: 20px; 
+    align-items: center; 
+    margin-bottom: 10px;
+}
+
+#origin .text {
+    margin-left: 50px;
+    padding: 5px;
+}
+
+#origin .text h2{
+    margin-bottom: 20px;
+}
+
+#origin .text p {
+    margin-bottom: 20px; 
+}
+
+.image {
+    margin-top: 50px; 
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+
+.image img {
+    max-width: 85%;
+    height: auto;
+}
+
+/* Ingredients container */
+
+.ingredients-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px; 
+    align-items: center; 
+    margin-bottom: 10px;
+}
+
+#ingredients .text {
+    margin-left: 50px;
+    padding: 5px;
+}
+
+#ingredients .text h2 {
+    margin-bottom: 20px;
+}
+
+#ingredients .text p {
+    margin-bottom: 20px;
+}
+
+#ingredients .image {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+
+#ingredients .image img {
+    max-width: 85%;
+    height: auto;
+}
+
+/* styling the table  */
+
+.nutritional-table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 2px solid #34495e;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+}
+
+.nutritional-table th {
+    background-color: #34495e;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+}
+
+.nutritional-table td {
+    border: 1px solid #dcdde1;
+    padding: 10px;
+}
+
+.nutritional-table tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.nutritional-table tr:hover {
+    background-color: #e0e0e0;
+}
+
+/* aside section */
+
+#facts {
+    grid-template-columns: 1fr 1fr; 
+    grid-column-gap: 20px; 
+    align-items: center; 
+    margin-bottom: 10px;
+}
+
+#facts img {
+    max-width: 100%;
+    height: auto;
+}
+
+#facts h3 {
+    margin-bottom: 20px;
+}
+
+#facts p {
+    margin-bottom: 20px;
+}
+
+#facts {
+    margin: 20px 0;
+}
+
+/* Contact form */
+
+button {
+    background-color: #e50a0a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+button:hover {
+    background-color: #8a0606;
+}
